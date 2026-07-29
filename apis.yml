@@ -1,24 +1,145 @@
 aid: jagex
 name: Jagex
-description: 'Jagex is a company surfaced as a portfolio company of insight-partners and added to the
-  API Evangelist network as a stub for enrichment. Sector: gaming. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: >-
+  Jagex is a British video game developer and publisher headquartered in
+  Cambridge, England, best known as the studio behind RuneScape and Old School
+  RuneScape - persistent, community-shaped online worlds that have run for over
+  two decades. Beyond the games, Jagex operates a set of public, read-only
+  RuneScape web-data APIs: the Grand Exchange item price and catalogue
+  endpoints (for both RuneScape and Old School RuneScape), the RuneScape and
+  Old School RuneScape Hiscores, and the RuneMetrics player-profile service.
+  These unauthenticated JSON and CSV endpoints power a large third-party
+  ecosystem of price trackers, fan sites, clan tools, and community
+  applications. Jagex was surfaced as a portfolio company of Insight Partners.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://framerusercontent.com/images/9PUahve9ur24noPS9vqowNzFwU.jpg
 url: https://raw.githubusercontent.com/api-evangelist/jagex/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - insight-partners
-x-tier: stub
+x-tier: profiled
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Gaming
-apis: []
+- Games
+- RuneScape
+- MMORPG
+- Video Games
+- Game Data
+- Grand Exchange
+- Hiscores
+- Player Data
+apis:
+- name: RuneScape Grand Exchange API
+  description: >-
+    Read-only JSON endpoints for the RuneScape (RS3) Grand Exchange item
+    database - item detail (price, trend, 30/90/180-day movement), category
+    listings, and daily price-history graphs. Unauthenticated GET.
+  humanURL: https://secure.runescape.com/m=itemdb_rs/
+  baseURL: https://secure.runescape.com/m=itemdb_rs/api
+  tags:
+  - RuneScape
+  - Grand Exchange
+  - Prices
+  - Game Data
+  properties:
+  - type: Documentation
+    url: https://runescape.wiki/w/Application_programming_interface
+- name: Old School RuneScape Grand Exchange API
+  description: >-
+    Read-only JSON endpoints for the Old School RuneScape (OSRS) Grand Exchange
+    item database - item detail, category listings, and price-history graphs.
+    Unauthenticated GET.
+  humanURL: https://secure.runescape.com/m=itemdb_oldschool/
+  baseURL: https://secure.runescape.com/m=itemdb_oldschool/api
+  tags:
+  - Old School RuneScape
+  - Grand Exchange
+  - Prices
+  - Game Data
+- name: RuneScape Hiscores API
+  description: >-
+    Player skill and activity rankings for RuneScape (RS3). The index_lite
+    endpoint returns rank, level, and experience per skill as CSV;
+    unauthenticated GET keyed by player display name.
+  humanURL: https://secure.runescape.com/m=hiscore/
+  baseURL: https://services.runescape.com/m=hiscore
+  tags:
+  - RuneScape
+  - Hiscores
+  - Player Data
+- name: Old School RuneScape Hiscores API
+  description: >-
+    Player skill and activity rankings for Old School RuneScape (OSRS). The
+    index_lite endpoint returns rank, level, and experience per skill as CSV;
+    unauthenticated GET keyed by player display name.
+  humanURL: https://secure.runescape.com/m=hiscore_oldschool/
+  baseURL: https://secure.runescape.com/m=hiscore_oldschool
+  tags:
+  - Old School RuneScape
+  - Hiscores
+  - Player Data
+- name: RuneMetrics Profile API
+  description: >-
+    Public player-profile service for RuneScape (RS3), exposing summary
+    statistics, skill levels, quest progress, and recent activity for accounts
+    that have opted their profile public. Returns JSON; unauthenticated GET
+    keyed by player name.
+  humanURL: https://apps.runescape.com/runemetrics/app/welcome
+  baseURL: https://apps.runescape.com/runemetrics/profile
+  tags:
+  - RuneScape
+  - Player Data
+  - RuneMetrics
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: Website
+  url: https://www.jagex.com/
+- type: DeveloperPortal
+  url: https://secure.runescape.com/m=itemdb_rs/
+- type: Documentation
+  url: https://runescape.wiki/w/Application_programming_interface
+- type: Blog
+  url: https://www.jagex.com/news
+- type: Careers
+  url: https://www.jagex.com/careers
+- type: TermsOfService
+  url: https://legal.jagex.com/docs/terms
+- type: PrivacyPolicy
+  url: https://legal.jagex.com/docs/policies/privacy
+- type: SecurityTxt
+  url: well-known/jagex-security.txt
+- type: WellKnown
+  url: well-known/jagex-well-known.yml
+- type: VulnerabilityDisclosure
+  url: security/jagex-vulnerability-disclosure.yml
+- type: Security
+  url: https://www.jagex.com/.well-known/security.txt
+- type: DomainSecurity
+  url: security/jagex-domain-security.yml
+- type: LLMsTxt
+  url: llms/jagex-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

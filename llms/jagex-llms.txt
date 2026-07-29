@@ -1,0 +1,22 @@
+# Jagex
+
+> Jagex is a British video game developer and publisher (Cambridge, England), best known as the studio behind RuneScape and Old School RuneScape. It operates a set of public, read-only RuneScape web-data APIs - Grand Exchange prices, Hiscores rankings, and RuneMetrics player profiles - that power a large third-party community ecosystem. All endpoints are unauthenticated HTTP GET returning JSON or CSV.
+
+## APIs
+
+- [RuneScape Grand Exchange API](https://secure.runescape.com/m=itemdb_rs/): RS3 Grand Exchange item detail, category listings, and price-history graphs. Base URL: https://secure.runescape.com/m=itemdb_rs/api
+- [Old School RuneScape Grand Exchange API](https://secure.runescape.com/m=itemdb_oldschool/): OSRS Grand Exchange item detail, categories, and graphs. Base URL: https://secure.runescape.com/m=itemdb_oldschool/api
+- [RuneScape Hiscores API](https://secure.runescape.com/m=hiscore/): RS3 player skill/activity rankings (rank, level, xp) as CSV. Base URL: https://services.runescape.com/m=hiscore
+- [Old School RuneScape Hiscores API](https://secure.runescape.com/m=hiscore_oldschool/): OSRS player skill/activity rankings as CSV. Base URL: https://secure.runescape.com/m=hiscore_oldschool
+- [RuneMetrics Profile API](https://apps.runescape.com/runemetrics/app/welcome): Public RS3 player profiles - summary stats, skills, quests, recent activity. Base URL: https://apps.runescape.com/runemetrics/profile
+
+## Docs
+
+- [Community API reference (RuneScape Wiki)](https://runescape.wiki/w/Application_programming_interface): Community-maintained documentation of the Grand Exchange, Hiscores, and RuneMetrics endpoints.
+- [Jagex news](https://www.jagex.com/news): Company and game news.
+- [Terms](https://legal.jagex.com/docs/terms): Jagex legal terms.
+- [Privacy policy](https://legal.jagex.com/docs/policies/privacy): Jagex privacy policy.
+
+## Security
+
+- [security.txt](https://www.jagex.com/.well-known/security.txt): RFC 9116 security contact - security@jagex.com.
