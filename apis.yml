@@ -11,6 +11,17 @@ description: >-
   These unauthenticated JSON and CSV endpoints power a large third-party
   ecosystem of price trackers, fan sites, clan tools, and community
   applications. Jagex was surfaced as a portfolio company of Insight Partners.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
